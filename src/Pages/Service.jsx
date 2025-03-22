@@ -94,9 +94,9 @@ const Service = () => {
         <div className="w-[80%] mx-auto grid sm:grid-cols-2 grid-cols-1 gap-16">
           <div className="service-left relative">
             <div className='relative h-[50vh]'>
-              <img src="public\img2.jpg" alt="" className='absolute top-0 w-[18rem] object-contain rounded-lg' />
-              <img src="public\img3.jpg" alt="" className='absolute w-[25rem] top-[3rem] right-0 object-contain rounded-lg border-[5px] border-white' />
-              <img src="public\img4.jpg" alt="" className='absolute left-8 bottom-[-5rem] w-[20rem] object-contain rounded-lg border-[5px] border-white' />
+              <img src="/img2.jpg" alt="" className='absolute top-0 w-[18rem] object-contain rounded-lg' />
+              <img src="/img3.jpg" alt="" className='absolute w-[25rem] top-[3rem] right-0 object-contain rounded-lg border-[5px] border-white' />
+              <img src="/img4.jpg" alt="" className='absolute left-8 bottom-[-5rem] w-[20rem] object-contain rounded-lg border-[5px] border-white' />
             </div>
           </div>
           <div className="service-right">

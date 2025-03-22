@@ -47,7 +47,7 @@ export default function ContactForm() {
           
           <button type="submit" className="p-2 bg-red-600 hover:bg-red-700 text-white font-bold rounded-md cursor-pointer">Send Message</button>
         </form>
-        <img src="public\img4.jpg" alt="" className="form-img"/>
+        <img src="/img4.jpg" alt="" className="form-img"/>
       </div>
     </div>
   );

@@ -150,7 +150,7 @@ const About = () => {
         </div>
 
         <div className='right-container'>
-          <img src="public\aboutSecImg1.avif" alt="" className='object-contain h-full ' />
+          <img src="/aboutSecImg1.avif" alt="" className='object-contain h-full ' />
         </div>
       </div>
 
