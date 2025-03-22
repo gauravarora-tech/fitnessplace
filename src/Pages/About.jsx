@@ -22,7 +22,7 @@ const trainers = [
     id: 1,
     name: "Dinesh Doe",
     role: "Personal Trainer",
-    image: "/public/trainer1.jpg",
+    image: "/trainer1.jpg",
     social: {
       facebook: "#",
       instagram: "#",
@@ -33,7 +33,7 @@ const trainers = [
     id: 2,
     name: "Gaurav Arora",
     role: "Fitness Coach",
-    image: "/public/trainer.jpg",
+    image: "/trainer.jpg",
     social: {
       facebook: "#",
       instagram: "#",
@@ -45,7 +45,7 @@ const trainers = [
     id: 3,
     name: "Rajat Chug",
     role: "Fitness Coach",
-    image: "/public/trainer1.jpg",
+    image: "/trainer1.jpg",
     social: {
       facebook: "#",
       instagram: "#",
