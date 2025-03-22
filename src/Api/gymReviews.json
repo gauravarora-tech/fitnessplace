@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "review": "This gym is fantastic! The equipment is top-notch, and the trainers are very helpful.",
+        "rating": 5
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "review": "Great atmosphere and friendly staff. Highly recommend this gym!",
+        "rating": 4
+    },
+    {
+        "id": 3,
+        "name": "Alice Johnson",
+        "review": "The gym is clean and well-maintained. Love the variety of classes offered.",
+        "rating": 5
+    },
+    {
+        "id": 4,
+        "name": "Michael Brown",
+        "review": "Amazing gym with state-of-the-art equipment. The trainers are very knowledgeable and supportive.",
+        "rating": 5
+    },
+    {
+        "id": 5,
+        "name": "Emily Davis",
+        "review": "I love the group classes here! They are fun and challenging. The gym is always clean and well-organized.",
+        "rating": 4
+    },
+    {
+        "id": 6,
+        "name": "David Wilson",
+        "review": "The best gym in town! The staff is friendly, and the facilities are top-notch. Highly recommended!",
+        "rating": 5
+    },
+    {
+        "id": 7,
+        "name": "Sarah Martinez",
+        "review": "I've been a member for over a year, and I'm very happy with the service. The gym has everything I need.",
+        "rating": 4
+    },
+    {
+        "id": 8,
+        "name": "James Anderson",
+        "review": "Great place to work out! The equipment is always in good condition, and the atmosphere is motivating.",
+        "rating": 5
+    },
+    {
+        "id": 9,
+        "name": "Laura Taylor",
+        "review": "The gym is spacious and clean. The trainers are very helpful and always willing to give advice.",
+        "rating": 5
+    },
+    {
+        "id": 10,
+        "name": "Daniel Thomas",
+        "review": "I joined this gym a month ago, and I'm already seeing great results. The trainers are amazing!",
+        "rating": 4
+    }
+]

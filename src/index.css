@@ -1,0 +1,375 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #f40606;
+    --secondary-color: #f31d1d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+span {
+    display: inline-block;
+    /* overflow-y: hidden; */
+}
+
+/* BUTTON */
+.btn {
+    border: 1px solid #fff;
+    padding: .8rem 2rem;
+}
+
+/* Header css */
+.navbar {
+    position: fixed;
+    top: .7rem;
+    /* left: 0; */
+    width: 75%;
+    background-color: rgb(18 18 18 / 70%);
+    color: white;
+    padding: 10px 20px;
+    transition: transform 2s ease-in-out;
+    z-index: 1000;
+    margin: auto;
+    backdrop-filter: saturate(180%) blur(7px);
+}
+
+.navbar.visible {
+    transform: translateY(0);
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+    text-shadow: 0px 0px 15px rgb(240 240 240 / 80%)
+}
+
+.nav-links li a:hover {
+    color: var(--main-color);
+    /* Change to your preferred hover color */
+}
+
+/* Hero Section */
+
+.hero-section {
+    /* width: 100%; */
+    height: 100vh;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Ensure the video stays in the background */
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    object-fit: cover;
+    /* Ensures the video covers the entire area */
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .our-reviews-container::before{
+    content: "Testimonial";
+    position: absolute;
+    top: 5%;
+    left: -2rem;
+    color: rgba(145, 144, 144, 0.366);
+    z-index: -1;
+    font-size: 10rem;
+} */
+
+.our-reviews-right .swiper-wrapper .swiper-slide {
+    display: flex !important;
+    align-items: center;
+    width: 100% !important;
+}
+
+.our-reviews-right .swiper-pagination-bullet-active {
+    background-color: var(--main-color) !important;
+}
+
+.our-programs-section h3 {
+    position: relative;
+}
+
+.our-programs-section h3::before {
+    position: absolute;
+    content: "Program";
+    top: -5rem;
+    right: -9rem;
+    color: rgba(254, 204, 204, 0.366);
+    /* color: rgba(145, 144, 144, 0.366); */
+    z-index: -1;
+    font-size: 8rem;
+    letter-spacing: .2rem;
+}
+
+
+
+.our-programs-section .swiper-button-prev {
+    left: 69rem !important;
+    top: 15rem !important;
+    color: var(--main-color) !important;
+    font-weight: 700;
+}
+
+.our-programs-section .swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 2rem !important;
+}
+
+.our-programs-section .swiper-button-next {
+    top: 15rem !important;
+    color: var(--main-color) !important;
+    font-weight: 700;
+}
+
+.our-programs-section .swiper {
+    position: static !important;
+}
+
+.parent {
+    perspective: 950px;
+}
+
+.gym-pricing-card:hover {
+    transition: all .3s ease-in-out;
+    /* transform: scale(1.2);
+    transform: rotateX(10deg); */
+    transform: rotateX(10deg) scale(1.08) !important;
+}
+
+.form-img {
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        border-radius: 3rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger svg {
+        font-size: 1.8rem;
+    }
+
+    .about-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .navbar-content {
+        padding: 1rem 0;
+    }
+
+    .navbar-content a,
+    .navbar-content a>span {
+        font-size: 1.5rem;
+        text-wrap-mode: nowrap;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .ham-active {
+        border-top: 1px solid var(--main-color);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #000000e6;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        border-radius: 1rem;
+        padding: 2rem 0;
+    }
+
+    .banner-container .left-container {
+        padding: 2rem 0;
+    }
+
+    .banner-container .right-container {
+        padding-top: 2rem;
+    }
+
+    .our-reviews-right {
+        height: 45vh;
+    }
+
+    .our-reviews-right .swiper-wrapper .swiper-slide div {
+        width: 100%;
+    }
+
+    .join-us-container .join-us input {
+        padding-right: 0;
+        color: black;
+    }
+
+    .join-us-container .join-us button {
+        position: static;
+        transform: translateY(0);
+        margin-top: 1rem;
+        background-color: #fff;
+        color: var(--main-color);
+    }
+
+    .join-us-container .join-first-child {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .overlay-content p {
+        font-size: 1.5rem;
+        text-wrap-mode: nowrap;
+    }
+
+    .overlay-content h1 {
+        font-size: 3.3rem;
+        line-height: 3.8rem;
+    }
+
+    .our-programs-section .swiper-button-prev {
+        left: 10rem !important;
+    }
+
+    .service-section h2 {
+        font-size: 4rem;
+    }
+
+    .gym-pricing-card {
+        width: 95%;
+    }
+
+    .gym-pricing-card h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .our-programs-section h3::before {
+        font-size: 4rem;
+        right: 1rem;
+        letter-spacing: .5rem;
+    }
+
+
+    .our-programs-section h3{
+        text-align: left;
+    }
+
+    .service-banner {
+        margin-top: 5rem;
+    }
+
+    .service-left div img:first-child {
+        display: none;
+    }
+
+    .service-right h3 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .contact-parent h3 {
+        font-size: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .contact-section .sub-heading {
+        font-size: 3rem;
+    }
+}
