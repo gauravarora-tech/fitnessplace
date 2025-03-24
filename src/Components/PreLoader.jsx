@@ -19,13 +19,13 @@ const PreLoader = () => {
                 ease: "power2.in",
             });
 
-            
+
 
     }, []);
 
     return (
         <div className="preloader overflow-hidden">
-            <img src="public\gymlogo.png" alt="loading" className='preloader-img w-[10rem]' />
+            <img src="/gymlogo.png" alt="loading" className='preloader-img w-[10rem]' />
             <h4 className='text-6xl mt-8'>FITNESS <span className='text-[--main-color]'>PLACE</span></h4>
         </div>
     )
