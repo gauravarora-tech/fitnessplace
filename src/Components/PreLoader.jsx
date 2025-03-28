@@ -18,13 +18,10 @@ const PreLoader = () => {
                 duration: 2,
                 ease: "power2.in",
             });
-
-
-
     }, []);
 
     return (
-        <div className="preloader overflow-hidden">
+        <div className="preloader overflow-hidden transition-all">
             <img src="/gymlogo.png" alt="loading" className='preloader-img w-[10rem]' />
             <h4 className='text-6xl mt-8'>FITNESS <span className='text-[--main-color]'>PLACE</span></h4>
         </div>
